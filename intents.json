@@ -1,0 +1,65 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening", "Is anyone there?", "Hi there", "Whats up", "Yo"],
+      "responses": ["Hello! How can I help you today?", "Hi there! What can I do for you?", "Hey! Good to see you."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "I am leaving", "Have a good day", "Catch you later", "Talk to you soon"],
+      "responses": ["Goodbye! Have a great day.", "See you soon! Take care.", "Bye! Come back anytime."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for the help", "Appreciate it"],
+      "responses": ["You're welcome!", "Happy to help!", "Anytime!"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["What is your name?", "Who are you?", "What should I call you?", "Do you have a name?"],
+      "responses": ["I'm NLPBot, your friendly AI assistant.", "You can call me NLPBot!", "I'm an AI chatbot built with Python and NLTK."]
+    },
+    {
+      "tag": "about",
+      "patterns": ["What can you do?", "What are your features?", "How can you help me?", "What is this chatbot for?"],
+      "responses": [
+        "I can chat with you, answer common questions, and understand your intent using NLP. Try asking me about my name, the time, or just say hello!",
+        "I'm a demo NLP chatbot -- I use text processing to understand what you're asking and reply accordingly."
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": ["What are your working hours?", "When are you available?", "Are you open now?", "What time do you open?"],
+      "responses": ["I'm available 24/7 since I'm an AI!", "No working hours here -- I'm always online."]
+    },
+    {
+      "tag": "age",
+      "patterns": ["How old are you?", "What's your age?", "When were you created?"],
+      "responses": ["I don't age like humans do -- I was just created recently!", "Age doesn't really apply to me, I'm software."]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Make me laugh", "Say something funny", "Do you know any jokes?"],
+      "responses": [
+        "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "Why did the developer go broke? Because he used up all his cache.",
+        "I would tell you a UDP joke, but you might not get it."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": ["I need help", "Can you help me", "Support", "I have a problem", "Something is not working"],
+      "responses": ["Sure, tell me more about what you need help with.", "I'm here to help -- what's the issue?"]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not quite sure I understand. Could you rephrase that?",
+        "Sorry, I didn't get that. Can you try asking differently?",
+        "Hmm, I don't have an answer for that yet."
+      ]
+    }
+  ]
+}

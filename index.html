@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NLPBot</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app">
+    <header class="app-header">
+      <div class="bot-identity">
+        <span class="status-dot"></span>
+        <h1>NLPBot</h1>
+      </div>
+      <p class="subtitle">intent-matching chatbot &middot; nltk + tf-idf</p>
+    </header>
+
+    <main class="chat-window" id="chat-window">
+      <div class="msg bot">
+        <div class="bubble">Hi, I'm NLPBot. Ask me something &mdash; try "tell me a joke" or "what's your name".</div>
+      </div>
+    </main>
+
+    <form class="composer" id="composer" autocomplete="off">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type a message..."
+        autocomplete="off"
+      />
+      <button type="submit" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 11.5L21 3L14 21L11 13.5L3 11.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
